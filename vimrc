@@ -57,10 +57,18 @@ endif
 "Jackson's code
 set number
 set ruler
+
 filetype indent on
 filetype plugin indent on
-si
-set nowrap
+set si "smartindent
+set ai "autoindent
+set extendtab
+set wrap
+
+" 1 tab == 4 spaces
+set shiftwidth=4
+set tabstop=4
+
 set showcmd
 set autoread
 set magic
@@ -69,3 +77,4 @@ cmap Q q
 cmap WQ wq
 cmap Wq wq
 cmap wQ wq
+
